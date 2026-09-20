@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Calculus Secant-to-Tangent Studio</title>
+    <meta name="description" content="A high-performance, offline-first visual calculus PWA by Sir Eugene Technologies for exploring difference quotients, secant-to-tangent limit convergence, and stationary points." />
+    <meta property="og:title" content="Calculus Secant-to-Tangent Studio" />
+    <meta property="og:description" content="A high-performance, offline-first visual calculus PWA by Sir Eugene Technologies for exploring difference quotients, secant-to-tangent limit convergence, and stationary points." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SecantTangent" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased overflow-hidden select-none touch-manipulation">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration error:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

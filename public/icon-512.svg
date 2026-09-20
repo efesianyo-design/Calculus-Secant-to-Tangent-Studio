@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <!-- Coordinate Grid -->
+  <line x1="60" y1="256" x2="452" y2="256" stroke="#334155" stroke-width="4" stroke-dasharray="6,6"/>
+  <line x1="256" y1="60" x2="256" y2="452" stroke="#334155" stroke-width="4" stroke-dasharray="6,6"/>
+  
+  <!-- Curve f(x)=x^2 -->
+  <path d="M 96 390 Q 256 360 256 256 T 416 120" fill="none" stroke="url(#curveGrad)" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Secant Line (Cyan) -->
+  <line x1="120" y1="360" x2="400" y2="140" stroke="#06b6d4" stroke-width="6" stroke-dasharray="8,6"/>
+  
+  <!-- Tangent Line (Neon Red) -->
+  <line x1="150" y1="380" x2="380" y2="150" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Points P and Q -->
+  <circle cx="210" cy="300" r="14" fill="#3b82f6" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="310" cy="210" r="12" fill="#06b6d4" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Math Symbol Delta/Limit -->
+  <text x="256" y="450" text-anchor="middle" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" letter-spacing="2">lim h→0 Δy/Δx = f'(x)</text>
+</svg>

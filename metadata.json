@@ -1,0 +1,6 @@
+{
+  "name": "Calculus Secant-to-Tangent Studio",
+  "description": "A high-performance, offline-first visual calculus PWA by Sir Eugene Technologies for exploring difference quotients, secant-to-tangent limit convergence, and stationary points.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
